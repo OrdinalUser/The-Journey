@@ -1,0 +1,22 @@
+/* Card-style blog post excerpts */
+.md-post {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.md-post:hover {
+  border-color: var(--md-accent-fg-color);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Thumbnail image in excerpt */
+.md-post .md-post__content img {
+  border-radius: 6px;
+  max-height: 200px;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
