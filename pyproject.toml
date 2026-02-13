@@ -1,0 +1,14 @@
+[project]
+name = "the-journey"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "dotenv>=0.9.9",
+    "matplotlib>=3.10.8",
+    "mkdocs>=1.6.1",
+    "mkdocs-git-revision-date-localized-plugin>=1.5.1",
+    "mkdocs-material>=9.7.1",
+    "plotly>=6.5.2",
+]

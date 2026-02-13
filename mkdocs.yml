@@ -1,0 +1,92 @@
+site_name: The Journey
+repo_url: https://github.com/OrdinalUser/the-journey
+repo_name: OrdinalUser/the-journey
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.tabs
+    - navigation.footer
+    - header.autohide
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.action.edit
+  icon:
+    tag:
+      python: material/language-python
+      cpp: material/language-cpp
+      math: material/math-integral
+      visualization: material/chart-box-plus-outline
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/link
+        name: Switch to light mode
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/theme-light-dark
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/theme-light-dark
+        name: Switch to light mode
+  custom_dir: docs/overrides
+  language: en
+
+extra:
+  tags:
+    Python: python
+    C++: cpp
+    Math: math
+    Visualization: visualization
+  social:
+    - icon: material/github
+      link: https://github.com/OrdinalUser
+    - icon: material/steam
+      link: https://steamcommunity.com/profiles/76561198098665580/
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - blog:
+      blog_dir: one-offs
+      post_date_format: long
+      post_excerpt: required
+      blog_toc: true
+      categories_allowed:
+        - Uncategorized
+        # <-- add more categories here! -->
+  - search
+  - tags
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: timeago
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.snippets:
+      url_download: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+nav:
+  - Home: index.md
+  - Projects: projects/index.md
+  - One-offs: one-offs/index.md
+  - Other: other.md
+  - About: about.md
+  - Uses: uses.md
