@@ -11,7 +11,7 @@ tags:
   - Visualization
 date:
   created: 2026-02-13
-  updated: 2026-02-14
+  updated: 2026-02-13
 links:
   - Wikipedia: https://en.wikipedia.org/wiki/Collatz_conjecture
 ---
@@ -21,7 +21,7 @@ links:
 ![Collatz trajectories](../../assets/thumbnails/collatz_conjecture_visualizer.png)
 
 How long until any number reaches 1? A quick Plotly exploration of one of
-math's most stubborn open problems. An example one-off to test out MkDocs.
+math's most stubborn open problems. An example one-off to test out MkDocs. AI generated content!
 
 <!-- more -->
 

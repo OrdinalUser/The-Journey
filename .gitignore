@@ -9,5 +9,13 @@ wheels/
 # Virtual environments
 .venv
 
+# uv files - manage it on your own
+.python-version
+pyproject.toml
+uv.lock
+
 # Media
 docs/assets/*
+
+# MkDocs stuff
+site

@@ -1,6 +1,7 @@
 site_name: The Journey
-repo_url: https://github.com/OrdinalUser/the-journey
-repo_name: OrdinalUser/the-journey
+# use_directory_urls: false # used to make local "mkdocs build" work
+repo_url: https://github.com/OrdinalUser/The-Journey
+repo_name: OrdinalUser/The-Journey
 edit_uri: edit/main/docs/
 
 theme:
