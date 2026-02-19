@@ -1,5 +1,5 @@
 site_name: The Journey
-# use_directory_urls: false # used to make local "mkdocs build" work
+use_directory_urls: false # used to make local "mkdocs build" work
 repo_url: https://github.com/OrdinalUser/The-Journey
 repo_name: OrdinalUser/The-Journey
 edit_uri: edit/main/docs/
@@ -83,6 +83,21 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - smarty:
+      substitutions:
+        left-single-quote:     '&lsquo;'
+        right-single-quote:    '&rsquo;'
+        left-double-quote:     '&ldquo;'
+        right-double-quote:    '&rdquo;'
+        left-angle-quote:      '&laquo;'
+        right-angle-quote:     '&raquo;'
+        ellipsis:              '&hellip;'
+        em-dash:               '&mdash;'
+        en-dash:               '&ndash;'
+        apostrophe:            '&rsquo;'
+      smart_quotes: true       # curly quotes
+      smart_dashes: true       # -- → en-dash, --- → em-dash
+      smart_ellipses: true
 
 nav:
   - Home: index.md
